@@ -1,10 +1,23 @@
-#### Code for our paper: Suriya Singh, Anil Batra, Guan Pang, Lorenzo Torresani, Saikat Basu, Manohar Paluri, and C. V. Jawahar. Self-supervised Feature Learning for Semantic Segmentation of Overhead Imagery. In BMVC, 2018.
+#### Self-Supervised Feature Learning for Semantic Segmentation of Overhead Imagery
+
+If you find our work useful in your research, please cite:
+
+    @inproceedings{singhBMVC18overhead,
+        Author = {Singh, Suriya; Batra, Anil; Pang, Guan; Torresani, Lorenzo; Basu, Saikat; Paluri, Manohar; Jawahar, C. V.},
+        Title = {Self-supervised Feature Learning for Semantic Segmentation of Overhead Imagery},
+        Booktitle = {BMVC},
+        Year = {2018}
+    }
 
 #### Dependencies
-* PyTorch 0.3
-* CUDA-8.0
-* OpenCV
+* [PyTorch 0.3](https://pytorch.org/)
+* [CUDA-8.0](https://developer.nvidia.com/cuda-80-ga2-download-archive)
+* [OpenCV](https://opencv.org/)
 
 
-#### Datasets Download
+#### Datasets
 * [ISPRS Potsdam](http://www2.isprs.org/commissions/comm3/wg4/data-request-form2.html)
+* [SpaceNet Roads](https://spacenetchallenge.github.io/Competitions/Competition3.html)
+* [DeepGlobe Lands](http://deepglobe.org/index.html)
+* [DeepGlobe Roads](http://deepglobe.org/index.html)
+
