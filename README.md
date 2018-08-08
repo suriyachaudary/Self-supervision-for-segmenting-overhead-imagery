@@ -13,6 +13,7 @@ If you find our work useful in your research, please cite:
 * [PyTorch 0.3](https://pytorch.org/)
 * [CUDA-8.0](https://developer.nvidia.com/cuda-80-ga2-download-archive)
 * [OpenCV](https://opencv.org/)
+* tifffile(https://www.lfd.uci.edu/~gohlke/code/tifffile.py.html)
 
 
 #### Datasets
