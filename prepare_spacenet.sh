@@ -11,7 +11,7 @@ mkdir -p $spacenet_all_city_RGB_root/tif/ $spacenet_all_city_RGB_root/train/{ima
 
 for f in $spacenet_individual_city_RGB_root/AOI*; do
 	echo 'copying ' $f to $spacenet_all_city_RGB_root/tif/;
-	# cp $f/RGB-PanSharpen/*.tif $spacenet_all_city_RGB_root/tif/
+	cp $f/RGB-PanSharpen/*.tif $spacenet_all_city_RGB_root/tif/
 done
 
 echo "Converting SpaceNet RGB-PanSharpen 16-bit image to 8-bit RGB image"
