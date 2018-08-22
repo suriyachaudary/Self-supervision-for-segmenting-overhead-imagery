@@ -21,4 +21,5 @@ If you find our work useful in your research, please cite:
 * [SpaceNet Roads](https://spacenetchallenge.github.io/Competitions/Competition3.html)
 * [DeepGlobe Lands](http://deepglobe.org/index.html)
 * [DeepGlobe Roads](http://deepglobe.org/index.html)
+* **Note** Results reported are on our splits.
 
