@@ -106,7 +106,7 @@ else:
 
 		indices = np.all(img == (255, 0, 0), axis=-1)
 		target[indices] = 5
-	elif dataset == 'dg_lands':
+	elif dataset == 'deepglobe_lands':
 		indices = np.all(img == (0, 255, 255), axis=-1)
 		target[indices] = 0
 

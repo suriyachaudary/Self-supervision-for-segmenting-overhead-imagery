@@ -10,7 +10,7 @@ potsdam_stride=200
 echo 'creating directories for images and gt crops for train and validation splits'
 mkdir -p $potsdam_root/processed/train/images/ $potsdam_root/processed/train/gt/ $potsdam_root/processed/val/images/ $potsdam_root/processed/val/gt/
 
-echo 'creating train crops with strid of' ${potsdam_stride} x ${potsdam_stride}
+echo 'creating train crops with stride of' ${potsdam_stride} x ${potsdam_stride}
 while read -r line; do 
 	echo 'processing ' $line;
 	python utils/color_map_to_class_index.py ${potsdam_gt_root}/${line}_label.tif ${potsdam_gt_root}/${line}_label.png potsdam
@@ -27,7 +27,7 @@ while read -r line; do
 done < ${potsdam_splits}/train.txt
 
 potsdam_stride=600
-echo 'creating val crops with strid of' ${potsdam_stride} x ${potsdam_stride}
+echo 'creating val crops with stride of' ${potsdam_stride} x ${potsdam_stride}
 while read -r line; do 
 	echo 'processing ' $line;
 	python utils/color_map_to_class_index.py ${potsdam_gt_root}/${line}_label.tif ${potsdam_gt_root}/${line}_label.png potsdam

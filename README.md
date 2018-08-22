@@ -23,3 +23,20 @@ If you find our work useful in your research, please cite:
 * [DeepGlobe Roads](http://deepglobe.org/index.html)
 * **Note** Results reported are on our splits.
 
+##### Preparing datasets for training
+* Potsdam
+```bash 
+bash prepare_potsdam.sh
+```
+* SpaceNet
+```bash 
+bash prepare_spacenet.sh
+```
+* DeepGlobe Lands
+```bash 
+bash prepare_deepglobe_lands.sh
+```
+* DeepGlobe Roads
+```bash 
+bash prepare_deepglobe_roads.sh
+```
