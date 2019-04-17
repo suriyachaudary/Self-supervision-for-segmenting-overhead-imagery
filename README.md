@@ -40,3 +40,6 @@ bash prepare_deepglobe_lands.sh
 ```bash 
 bash prepare_deepglobe_roads.sh
 ```
+
+##### Please refer to jupyter notebook for reproducing our results
+[Notebook](https://github.com/suriyasingh/Self-supervision-for-segmenting-overhead-imagery/blob/master/Self_supervised_Feature_Learning_for_Semantic_Segmentation_of_Overhead_Imagery.ipynb)
