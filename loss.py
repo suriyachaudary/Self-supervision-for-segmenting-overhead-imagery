@@ -5,7 +5,6 @@ import torch.nn as nn
 from torch.autograd import Variable
 
 def cross_entropy2d(input, target, weights=None, size_average=True):
-    n, c, h, w = input.size()
     log_p = F.log_softmax(input, dim = 1)
     loss = F.nll_loss(log_p, Variable(target.cuda()), weight=weights, size_average=size_average)
     
