@@ -41,5 +41,5 @@ bash prepare_deepglobe_lands.sh
 bash prepare_deepglobe_roads.sh
 ```
 
-##### Please refer to jupyter notebook for reproducing our results
+##### Please refer to jupyter notebook for semantic inpainting (Pathak et al, CVPR 2016), adversarial mask prediction, and semantic segmentation codes:
 [Notebook](https://github.com/suriyasingh/Self-supervision-for-segmenting-overhead-imagery/blob/master/Self_supervised_Feature_Learning_for_Semantic_Segmentation_of_Overhead_Imagery.ipynb)
