@@ -18,7 +18,7 @@ If you find our work useful in your research, please cite:
 
 #### Datasets
 * [ISPRS Potsdam](http://www2.isprs.org/commissions/comm3/wg4/data-request-form2.html)
-* [SpaceNet Roads](https://spacenetchallenge.github.io/Competitions/Competition3.html)
+* [SpaceNet Roads](https://spacenetchallenge.github.io/Challenges/Challenge-3.html)
 * [DeepGlobe Lands](http://deepglobe.org/index.html)
 * [DeepGlobe Roads](http://deepglobe.org/index.html)
 * **Note** Results reported are on our splits.
