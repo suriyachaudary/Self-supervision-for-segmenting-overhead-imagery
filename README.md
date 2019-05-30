@@ -49,9 +49,9 @@ Toggling `use_coach` flag in the notebook is sufficient to switch between our me
 ##### For other ResNet-18 baselines in Table 2,
 
 ###### scratch :
-`from models import resnet18, FCNify`
-`net = resnet18().cuda()`
-`net_segmentation = FCNify(net, n_class = nClasses)`
+`from models import resnet18, FCNify
+net = resnet18().cuda()
+net_segmentation = FCNify(net, n_class = nClasses)`
 
 ###### ImageNet :
 `from models import resnet18, FCNify` 
