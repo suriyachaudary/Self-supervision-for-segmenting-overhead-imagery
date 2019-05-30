@@ -44,7 +44,7 @@ bash prepare_deepglobe_roads.sh
 ##### Please refer to jupyter notebook for semantic inpainting (Pathak et al, CVPR 2016), adversarial mask prediction, and semantic segmentation codes:
 [Notebook](https://github.com/suriyasingh/Self-supervision-for-segmenting-overhead-imagery/blob/master/Self_supervised_Feature_Learning_for_Semantic_Segmentation_of_Overhead_Imagery.ipynb)
 
-toggling use_coach flag in the notebook is sufficient to switch between our method and context encoders. Random patches from the image are erased when use_coach = False whereas the mask values are sampled from uniform distribution in iteration 0 or predicted by the coach network in iteration > 0 when use_coach = True.
+Toggling `use_coach` flag in the notebook is sufficient to switch between our method and Context Encoders. Random patches from the image are erased when `use_coach = False` whereas the mask values are sampled from uniform distribution in `iteration 0` or predicted by the coach network in `iteration > 0` when `use_coach = True`.
 
 ##### For other ResNet-18 baselines in Table 2,
 
