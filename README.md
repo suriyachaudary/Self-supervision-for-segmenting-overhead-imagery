@@ -57,15 +57,21 @@ Toggling `use_coach` flag in the notebook is sufficient to switch between our me
 
 ###### ImageNet :
 `from models import resnet18, FCNify` 
+
 `net = resnet18(pretrained=True).cuda()` 
+
 `net_segmentation = FCNify(net, n_class = nClasses)`
 
 ###### autoencoder with bottleneck and retaining pre-trained deocder:
 `net = resnet18_encoderdecoder_wbottleneck().cuda()`
+
 `erase_count = 0 ### number of blocks to erase from image`
+
 `net_segmentation = FCNify_v2(net, n_class = nClasses)`
 
 ###### autoencoder without bottleneck and retaining pre-trained deocder:
 `net = resnet18_encoderdecoder_wbottleneck().cuda()`
+
 `erase_count = 0 ### number of blocks to erase from image`
+
 `net_segmentation = FCNify_v2(net, n_class = nClasses)`
