@@ -43,3 +43,27 @@ bash prepare_deepglobe_roads.sh
 
 ##### Please refer to jupyter notebook for semantic inpainting (Pathak et al, CVPR 2016), adversarial mask prediction, and semantic segmentation codes:
 [Notebook](https://github.com/suriyasingh/Self-supervision-for-segmenting-overhead-imagery/blob/master/Self_supervised_Feature_Learning_for_Semantic_Segmentation_of_Overhead_Imagery.ipynb)
+
+toggling use_coach flag in the notebook is sufficient to switch between our method and context encoders. Random patches from the image are erased when use_coach = False whereas the mask values are sampled from uniform distribution in iteration 0 or predicted by the coach network in iteration > 0 when use_coach = True.
+
+##### For other ResNet-18 baselines in Table 2,
+
+###### scratch :
+`from models import resnet18, FCNify`
+`net = resnet18().cuda()`
+`net_segmentation = FCNify(net, n_class = nClasses)`
+
+###### ImageNet :
+`from models import resnet18, FCNify` 
+`net = resnet18(pretrained=True).cuda()` 
+`net_segmentation = FCNify(net, n_class = nClasses)`
+
+###### autoencoder with bottleneck and retaining pre-trained deocder:
+`net = resnet18_encoderdecoder_wbottleneck().cuda()`
+`erase_count = 0 ### number of blocks to erase from image`
+`net_segmentation = FCNify_v2(net, n_class = nClasses)`
+
+###### autoencoder without bottleneck and retaining pre-trained deocder:
+`net = resnet18_encoderdecoder_wbottleneck().cuda()`
+`erase_count = 0 ### number of blocks to erase from image`
+`net_segmentation = FCNify_v2(net, n_class = nClasses)`
